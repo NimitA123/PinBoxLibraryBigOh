@@ -1,5 +1,5 @@
 # Author :- Nimit Agarwal Pin Box Library implemented...
-##Add it in your root build.gradle at the end of repositories:
+## Add it in your root build.gradle at the end of repositories:
 ### allprojects {
 		repositories {
 			...

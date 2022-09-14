@@ -8,5 +8,5 @@
 	}
   ##  Add the dependency
   ###	dependencies {
-	        implementation 'com.github.NimitA123:PinBoxLibraryBigOh:Tag'
+	        implementation 'com.github.NimitA123:PinBoxLibraryBigOh:1.0.0'
 	}

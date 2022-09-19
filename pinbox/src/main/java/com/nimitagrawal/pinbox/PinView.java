@@ -136,7 +136,7 @@ public class PinView extends AppCompatEditText {
         mPinItemRadius = (int) a.getDimension(R.styleable.PinView_itemRadius, 0);
         mLineWidth = (int) a.getDimension(R.styleable.PinView_lineWidth,
                 res.getDimensionPixelSize(R.dimen.pv_pin_view_item_line_width));
-        circleItemRadius = (int) a.getDimension(R.styleable.PinView_circleItemRadius,  45F);
+        circleItemRadius = (int) a.getDimension(R.styleable.PinView_circleItemRadius,  45);
         mLineColor = a.getColorStateList(R.styleable.PinView_lineColor);
         isCursorVisible = a.getBoolean(R.styleable.PinView_android_cursorVisible, true);
         mCursorColor = a.getColor(R.styleable.PinView_cursorColor, getCurrentTextColor());

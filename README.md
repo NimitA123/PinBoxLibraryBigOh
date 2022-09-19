@@ -51,6 +51,8 @@
 ## You can  also set all the atribute of the xml file through the code 
 
 #### final PinView pinView = findViewById(R.id.pinView);
+    
+    
 pinView.setTextColor(
         ResourcesCompat.getColor(getResources(), R.color.colorAccent, getTheme()));
 pinView.setTextColor(
@@ -77,7 +79,6 @@ pinView.setItemBackgroundResources(R.drawable.item_background);
 pinView.setHideLineWhenFilled(false);
 pinView.setPasswordHidden(false);
 pinView.setTransformationMethod(new PasswordTransformationMethod());
-
 
 
 ## Thanks......

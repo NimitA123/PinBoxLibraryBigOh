@@ -1,5 +1,5 @@
 # Author :- Nimit Agarwal Pin Box Library implemented...
-
+### Provide widget in the xml file for enter OTP/Password in the Pinbox
 <p>
   <img src="https://user-images.githubusercontent.com/86598310/190971301-814f5201-f515-478d-9f4a-3bca03a09d70.jpeg" width = "30%" height = "450" >
   <img src="https://user-images.githubusercontent.com/86598310/190971310-fdc6cc6c-302d-4d22-a01a-5fb6679646a7.jpeg" width="30%"  height = "450"   alt="accessibility text">
@@ -18,4 +18,3 @@
 	}
 	
 
-![WhatsApp Image 2022-09-19 at 1 13 20 PM](https://user-images.githubusercontent.com/86598310/190975998-8d0624f8-5b95-4382-8e9e-f5a1a4c917b7.jpeg)

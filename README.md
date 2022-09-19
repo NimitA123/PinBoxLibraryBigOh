@@ -48,5 +48,37 @@
 <p style="color:blue;">
     if viewType is circle than you can use app:circleItemRadius="20dp" to specify the radius of the circle.
 </p>
+## You can  also set all the atribute of the xml file through the code 
 
+#### final PinView pinView = findViewById(R.id.pinView);
+pinView.setTextColor(
+        ResourcesCompat.getColor(getResources(), R.color.colorAccent, getTheme()));
+pinView.setTextColor(
+        ResourcesCompat.getColorStateList(getResources(), R.color.text_colors, getTheme()));
+pinView.setLineColor(
+        ResourcesCompat.getColor(getResources(), R.color.colorPrimary, getTheme()));
+pinView.setLineColor(
+        ResourcesCompat.getColorStateList(getResources(), R.color.line_colors, getTheme()));
+pinView.setItemCount(4);
+pinView.setItemHeight(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size));
+pinView.setItemWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size));
+pinView.setItemRadius(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_radius));
+pinView.setItemSpacing(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_spacing));
+pinView.setLineWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_line_width));
+pinView.setAnimationEnable(true);// start animation when adding text
+pinView.setCursorVisible(false);
+pinView.setCursorColor(
+        ResourcesCompat.getColor(getResources(), R.color.line_selected, getTheme()));
+pinView.setCursorWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_cursor_width));
+pinView.addTextChangedListener(new TextWatcher() {...});
+pinView.setItemBackgroundColor(Color.BLACK);
+pinView.setItemBackground(getResources().getDrawable(R.drawable.item_background));
+pinView.setItemBackgroundResources(R.drawable.item_background);
+pinView.setHideLineWhenFilled(false);
+pinView.setPasswordHidden(false);
+pinView.setTransformationMethod(new PasswordTransformationMethod());
+
+
+
+## Thanks......
     

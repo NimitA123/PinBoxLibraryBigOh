@@ -68,17 +68,17 @@
      pinView.setItemSpacing(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_spacing));
      pinView.setLineWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_line_width));
      pinView.setAnimationEnable(true);// start animation when adding text
-pinView.setCursorVisible(false);
-pinView.setCursorColor(
+     pinView.setCursorVisible(false);
+     pinView.setCursorColor(
         ResourcesCompat.getColor(getResources(), R.color.line_selected, getTheme()));
-pinView.setCursorWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_cursor_width));
-pinView.addTextChangedListener(new TextWatcher() {...});
-pinView.setItemBackgroundColor(Color.BLACK);
-pinView.setItemBackground(getResources().getDrawable(R.drawable.item_background));
-pinView.setItemBackgroundResources(R.drawable.item_background);
-pinView.setHideLineWhenFilled(false);
-pinView.setPasswordHidden(false);
-pinView.setTransformationMethod(new PasswordTransformationMethod());
+     pinView.setCursorWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_cursor_width));
+     pinView.addTextChangedListener(new TextWatcher() {...});
+     pinView.setItemBackgroundColor(Color.BLACK);
+     pinView.setItemBackground(getResources().getDrawable(R.drawable.item_background));
+     pinView.setItemBackgroundResources(R.drawable.item_background);
+     pinView.setHideLineWhenFilled(false);
+     pinView.setPasswordHidden(false);
+     pinView.setTransformationMethod(new PasswordTransformationMethod());
 
 
 ## Thanks......

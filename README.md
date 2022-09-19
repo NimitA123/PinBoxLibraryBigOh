@@ -18,4 +18,31 @@
 	        implementation 'com.github.NimitA123:PinBoxLibraryBigOh:1.0.0'
 	}
 	
+	
+## Add PinView in the xml file
 
+
+<com.nimitagrawal.pinbox.PinView
+    android:id="@+id/firstPinView"
+    style="@style/PinWidget.PinView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:cursorVisible="true"
+    android:hint="Hint."
+    android:inputType="text"
+    android:itemBackground="@mipmap/ic_launcher"
+    android:padding="@dimen/common_padding"
+    android:textColor="@color/text_colors"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:cursorColor="@color/line_selected"
+    app:cursorWidth="2dp"
+    app:hideLineWhenFilled="true"
+    app:itemCount="5"
+    app:itemHeight="48dp"
+    app:itemRadius="4dp"
+    app:itemSpacing="0dp"
+    app:itemWidth="48dp"
+    app:lineColor="@color/line_colors"
+    app:lineWidth="2dp"
+    app:viewType="rectangle" />

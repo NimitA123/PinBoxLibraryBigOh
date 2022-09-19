@@ -16,6 +16,7 @@ package com.nimitagrawal.pinbox;
  */
 
 
+
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -76,7 +77,8 @@ public class PinView extends AppCompatEditText {
 
     private static final int VIEW_TYPE_RECTANGLE = 0;
     private static final int VIEW_TYPE_LINE = 1;
-    private static final int VIEW_TYPE_NONE = 2;
+    private static final int VIEW_TYPE_NONE = 3;
+    private static final int VIEW_TYPE_CIRCLE = 2;
 
     private int mViewType;
 
@@ -86,6 +88,7 @@ public class PinView extends AppCompatEditText {
     private int mPinItemHeight;
     private int mPinItemRadius;
     private int mPinItemSpacing;
+    private float circleItemRadius;
 
     private final Paint mPaint;
     private final TextPaint mAnimatorTextPaint = new TextPaint();
@@ -151,6 +154,7 @@ public class PinView extends AppCompatEditText {
         mPinItemRadius = (int) a.getDimension(R.styleable.PinView_itemRadius, 0);
         mLineWidth = (int) a.getDimension(R.styleable.PinView_lineWidth,
                 res.getDimensionPixelSize(R.dimen.pv_pin_view_item_line_width));
+        circleItemRadius = (float) a.getDimension(R.styleable.PinView_circleItemRadius,  45);
         mLineColor = a.getColorStateList(R.styleable.PinView_lineColor);
         isCursorVisible = a.getBoolean(R.styleable.PinView_android_cursorVisible, true);
         mCursorColor = a.getColor(R.styleable.PinView_cursorColor, getCurrentTextColor());
@@ -365,7 +369,7 @@ public class PinView extends AppCompatEditText {
         getPaint().setColor(getCurrentTextColor());
     }
 
-    private void drawPinView(Canvas canvas) {
+    public void drawPinView(Canvas canvas) {
         int highlightIdx = getText().length();
         for (int i = 0; i < mPinItemCount; i++) {
             boolean highlight = isFocused() && highlightIdx == i;
@@ -375,9 +379,9 @@ public class PinView extends AppCompatEditText {
             updateCenterPoint();
 
             canvas.save();
-            if (mViewType == VIEW_TYPE_RECTANGLE) {
+           if (mViewType == VIEW_TYPE_RECTANGLE) {
                 updatePinBoxPath(i);
-                canvas.clipPath(mPath);
+               canvas.clipPath(mPath);
             }
             drawItemBackground(canvas, highlight);
             canvas.restore();
@@ -390,6 +394,10 @@ public class PinView extends AppCompatEditText {
                 drawPinBox(canvas, i);
             } else if (mViewType == VIEW_TYPE_LINE) {
                 drawPinLine(canvas, i);
+            }
+            else if(mViewType==VIEW_TYPE_CIRCLE){
+
+               drawPinCircle(canvas,  i, 1);
             }
 
             if (DBG) {
@@ -461,12 +469,12 @@ public class PinView extends AppCompatEditText {
     }
 
     private void drawPinLine(Canvas canvas, int i) {
-        if (mHideLineWhenFilled && i < getText().length()) {
+       if (mHideLineWhenFilled && i < getText().length()) {
             return;
         }
         boolean l, r;
         l = r = true;
-        if (mPinItemSpacing == 0 && mPinItemCount > 1) {
+       if (mPinItemSpacing == 0 && mPinItemCount > 1) {
             if (i == 0) {
                 // draw only left round
                 r = false;
@@ -489,6 +497,31 @@ public class PinView extends AppCompatEditText {
 
         updateRoundRectPath(mItemLineRect, mPinItemRadius, mPinItemRadius, l, r);
         canvas.drawPath(mPath, mPaint);
+    }
+    private void  drawPinCircle(Canvas canvas, int i, int j){
+       /* if(j == 1){
+            canvas.drawCircle(50F, 50F, 50F, mPaint);
+        }
+        else if(j == 2){
+            canvas.drawCircle(80F, 80F, 30F, mPaint);
+        }
+        else if(j == 3){
+            canvas.drawCircle(70F, 70F, 40F, mPaint);
+        }
+        else{
+            canvas.drawCircle(60F, 60F, 50F, mPaint);
+        }
+        j++;
+*/
+
+           //updatePinBoxPath(i);
+        Paint paint = getPaintByIndex(i);
+        float cx = mItemCenterPoint.x;
+        float cy = mItemCenterPoint.y;
+        canvas.drawCircle(cx, cy, circleItemRadius, mPaint);
+        updatePinBoxPath(i);
+
+
     }
 
     private void drawCursor(Canvas canvas) {

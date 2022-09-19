@@ -46,3 +46,4 @@
     app:lineColor="@color/line_colors"
     app:lineWidth="2dp"
     app:viewType="rectangle" />
+    

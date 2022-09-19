@@ -45,5 +45,5 @@
     app:lineWidth="2dp"
     app:viewType="rectangle" />
     
-    #### if viewType is circle than you can use app:circleItemRadius="20dp" to specify the radius of the circle.
+   #### if viewType is circle than you can use app:circleItemRadius="20dp" to specify the radius of the circle.
     

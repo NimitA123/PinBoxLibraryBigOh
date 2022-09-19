@@ -53,21 +53,21 @@
 #### final PinView pinView = findViewById(R.id.pinView);
     
     
-pinView.setTextColor(
+     pinView.setTextColor(
         ResourcesCompat.getColor(getResources(), R.color.colorAccent, getTheme()));
-pinView.setTextColor(
+     pinView.setTextColor(
         ResourcesCompat.getColorStateList(getResources(), R.color.text_colors, getTheme()));
-pinView.setLineColor(
+     pinView.setLineColor(
         ResourcesCompat.getColor(getResources(), R.color.colorPrimary, getTheme()));
-pinView.setLineColor(
+     pinView.setLineColor(
         ResourcesCompat.getColorStateList(getResources(), R.color.line_colors, getTheme()));
-pinView.setItemCount(4);
-pinView.setItemHeight(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size));
-pinView.setItemWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size));
-pinView.setItemRadius(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_radius));
-pinView.setItemSpacing(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_spacing));
-pinView.setLineWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_line_width));
-pinView.setAnimationEnable(true);// start animation when adding text
+     pinView.setItemCount(4);
+     pinView.setItemHeight(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size));
+     pinView.setItemWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size));
+     pinView.setItemRadius(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_radius));
+     pinView.setItemSpacing(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_spacing));
+     pinView.setLineWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_line_width));
+     pinView.setAnimationEnable(true);// start animation when adding text
 pinView.setCursorVisible(false);
 pinView.setCursorColor(
         ResourcesCompat.getColor(getResources(), R.color.line_selected, getTheme()));

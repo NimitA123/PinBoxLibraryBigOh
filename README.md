@@ -45,7 +45,7 @@
     app:lineWidth="2dp"
     app:viewType="rectangle" />
     
-<p style="color:blue">
+<p style="color:blue;">
     if viewType is circle than you can use app:circleItemRadius="20dp" to specify the radius of the circle.
 </p>
 

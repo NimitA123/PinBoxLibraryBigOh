@@ -70,7 +70,7 @@ public class PinView extends AppCompatEditText {
     private int mPinItemHeight;
     private int mPinItemRadius;
     private int mPinItemSpacing;
-    private float circleItemRadius;
+    private int circleItemRadius;
 
     private final Paint mPaint;
     private final TextPaint mAnimatorTextPaint = new TextPaint();

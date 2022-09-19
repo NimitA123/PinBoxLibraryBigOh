@@ -1,22 +1,4 @@
 package com.nimitagrawal.pinbox;
-/*
- * Copyright 2017 Chaos Leong
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-
-
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -57,8 +39,8 @@ import androidx.core.view.ViewCompat;
 /**
  * Provides a widget for enter PIN/OTP/password etc.
  *
- * @author Chaos Leong
- * 01/04/2017
+ * @author Nimit Agarwal(Android Developer)
+ * 19/09/2022
  */
 public class PinView extends AppCompatEditText {
 
@@ -154,7 +136,7 @@ public class PinView extends AppCompatEditText {
         mPinItemRadius = (int) a.getDimension(R.styleable.PinView_itemRadius, 0);
         mLineWidth = (int) a.getDimension(R.styleable.PinView_lineWidth,
                 res.getDimensionPixelSize(R.dimen.pv_pin_view_item_line_width));
-        circleItemRadius = (float) a.getDimension(R.styleable.PinView_circleItemRadius,  45);
+        circleItemRadius = (int) a.getDimension(R.styleable.PinView_circleItemRadius,  45F);
         mLineColor = a.getColorStateList(R.styleable.PinView_lineColor);
         isCursorVisible = a.getBoolean(R.styleable.PinView_android_cursorVisible, true);
         mCursorColor = a.getColor(R.styleable.PinView_cursorColor, getCurrentTextColor());
@@ -518,7 +500,7 @@ public class PinView extends AppCompatEditText {
         Paint paint = getPaintByIndex(i);
         float cx = mItemCenterPoint.x;
         float cy = mItemCenterPoint.y;
-        canvas.drawCircle(cx, cy, circleItemRadius, mPaint);
+        canvas.drawCircle(cx, cy, (float)circleItemRadius, mPaint);
         updatePinBoxPath(i);
 
 

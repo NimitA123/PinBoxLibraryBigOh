@@ -15,7 +15,7 @@
 	}
   ##  Add the dependency
   ###	dependencies {
-	        implementation 'com.github.NimitA123:PinBoxLibraryBigOh:1.0.0'
+	        implementation 'com.github.NimitA123:PinBoxLibraryBigOh:1.0.3'
 	}
 	
 	

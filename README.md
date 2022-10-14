@@ -49,6 +49,8 @@
     if viewType is circle than you can use app:circleItemRadius="20dp" to specify the radius of the circle.
 </p>
 
+## This artibute is important for type number in the otp box
+     #### style="@style/PinWidget.PinView"
 
 ## You can  also set all the atribute of the xml file through the code 
 

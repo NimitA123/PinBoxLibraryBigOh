@@ -21,6 +21,7 @@
 	
 ## Add PinView in the xml file
  <com.nimitagrawal.pinbox.PinView
+ 
     android:id="@+id/firstPinView"
     style="@style/PinWidget.PinView"
     android:layout_width="wrap_content"

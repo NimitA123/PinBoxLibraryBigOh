@@ -84,6 +84,7 @@
      pinView.setTransformationMethod(new PasswordTransformationMethod());
 
 ## Attributes
+  "*"
   itemCount, the length of your pin code.
   itemWidth, the width of each item.
   itemHeight, the height of each item.

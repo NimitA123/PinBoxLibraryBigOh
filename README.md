@@ -6,7 +6,6 @@
 <source src="https://user-images.githubusercontent.com/86598310/202858174-ad0683f4-2790-45d7-a5ca-a03765ea0cbc.mp4"
             type="video/webm">
 	</video>	
-<img src = "https://user-images.githubusercontent.com/86598310/202858174-ad0683f4-2790-45d7-a5ca-a03765ea0cbc.mp4" width = "200" height = "400" />
 </p>	
 
 

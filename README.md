@@ -84,8 +84,8 @@
      pinView.setTransformationMethod(new PasswordTransformationMethod());
 
 ## Attributes
-  "*"
-  itemCount, the length of your pin code.
+  ***
+  * itemCount, the length of your pin code.
   itemWidth, the width of each item.
   itemHeight, the height of each item.
   itemSpacing, the spacing between two items.
@@ -97,6 +97,7 @@
   cursorWidth, the width of cursor.
   itemBackground, the item background.
   hideLineWhenFilled, specifies whether the line (border) should be hidden or visible when text entered.
+
 
 
 ## Thanks......

@@ -1,6 +1,6 @@
 # Author :- Nimit Agarwal Pin Box Library implemented...
 ### Provide widget in the xml file for enter OTP/Password in the Pinbox
-![WhatsApp Image 2022-11-19 at 8 32 14 PM](https://user-images.githubusercontent.com/86598310/202857712-3b15e43e-2e11-4027-b07b-b8a54b41da78.jpeg)
+<img src="https://user-images.githubusercontent.com/86598310/202857712-3b15e43e-2e11-4027-b07b-b8a54b41da78.jpeg" width="200" height="400" />
 
 
 ## Add it in your root build.gradle at the end of repositories:

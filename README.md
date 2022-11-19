@@ -83,6 +83,20 @@
      pinView.setPasswordHidden(false);
      pinView.setTransformationMethod(new PasswordTransformationMethod());
 
+## Attributes
+  itemCount, the length of your pin code.
+  itemWidth, the width of each item.
+  itemHeight, the height of each item.
+  itemSpacing, the spacing between two items.
+  lineWidth, the line (border) width.
+  lineColor, the line (border) colors.
+  viewType, the view type of PinView, currently this will be one of rectangle, line or none.
+  cursorVisible, show cursor or not.
+  cursorColor, the cursor color.
+  cursorWidth, the width of cursor.
+  itemBackground, the item background.
+  hideLineWhenFilled, specifies whether the line (border) should be hidden or visible when text entered.
+
 
 ## Thanks......
     

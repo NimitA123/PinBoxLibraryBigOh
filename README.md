@@ -2,9 +2,9 @@
 ### Provide widget in the xml file for enter OTP/Password in the Pinbox
 <p>
 <img src="https://user-images.githubusercontent.com/86598310/202857712-3b15e43e-2e11-4027-b07b-b8a54b41da78.jpeg" width="200" height="400" />
-https://user-images.githubusercontent.com/86598310/202858523-22beae59-dcda-4044-b0c8-76e43831485e.mp4
 </p>	
 
+https://user-images.githubusercontent.com/86598310/202858523-22beae59-dcda-4044-b0c8-76e43831485e.mp4
 
 
 

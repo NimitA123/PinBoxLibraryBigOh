@@ -61,31 +61,31 @@ https://user-images.githubusercontent.com/86598310/202858523-22beae59-dcda-4044-
 ##  Kotlin
      var pinView = findViewById(R.id.pinView)
      pinView.setTextColor(
-        ResourcesCompat.getColor(getResources(), R.color.colorAccent, getTheme()));
+        ResourcesCompat.getColor(getResources(), R.color.colorAccent, getTheme()))
      pinView.setTextColor(
-        ResourcesCompat.getColorStateList(getResources(), R.color.text_colors, getTheme()));
+        ResourcesCompat.getColorStateList(getResources(), R.color.text_colors, getTheme()))
      pinView.setLineColor(
-        ResourcesCompat.getColor(getResources(), R.color.colorPrimary, getTheme()));
+        ResourcesCompat.getColor(getResources(), R.color.colorPrimary, getTheme()))
      pinView.setLineColor(
-        ResourcesCompat.getColorStateList(getResources(), R.color.line_colors, getTheme()));
-     pinView.setItemCount(4);
-     pinView.setItemHeight(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size));
-     pinView.setItemWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size));
-     pinView.setItemRadius(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_radius));
-     pinView.setItemSpacing(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_spacing));
-     pinView.setLineWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_line_width));
+        ResourcesCompat.getColorStateList(getResources(), R.color.line_colors, getTheme()))
+     pinView.setItemCount(4)
+     pinView.setItemHeight(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size))
+     pinView.setItemWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_size))
+     pinView.setItemRadius(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_radius))
+     pinView.setItemSpacing(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_spacing))
+     pinView.setLineWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_item_line_width))
      pinView.setAnimationEnable(true);// start animation when adding text
-     pinView.setCursorVisible(false);
+     pinView.setCursorVisible(false)
      pinView.setCursorColor(
-        ResourcesCompat.getColor(getResources(), R.color.line_selected, getTheme()));
-     pinView.setCursorWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_cursor_width));
-     pinView.addTextChangedListener(new TextWatcher() {...});
-     pinView.setItemBackgroundColor(Color.BLACK);
-     pinView.setItemBackground(getResources().getDrawable(R.drawable.item_background));
-     pinView.setItemBackgroundResources(R.drawable.item_background);
-     pinView.setHideLineWhenFilled(false);
-     pinView.setPasswordHidden(false);
-     pinView.setTransformationMethod(new PasswordTransformationMethod());
+        ResourcesCompat.getColor(getResources(), R.color.line_selected, getTheme()))
+     pinView.setCursorWidth(getResources().getDimensionPixelSize(R.dimen.pv_pin_view_cursor_width))
+     pinView.addTextChangedListener(TextWatcher() {...})
+     pinView.setItemBackgroundColor(Color.BLACK)
+     pinView.setItemBackground(getResources().getDrawable(R.drawable.item_background))
+     pinView.setItemBackgroundResources(R.drawable.item_background)
+     pinView.setHideLineWhenFilled(false)
+     pinView.setPasswordHidden(false)
+     pinView.setTransformationMethod(new PasswordTransformationMethod())
 
 ## Attributes
   ***

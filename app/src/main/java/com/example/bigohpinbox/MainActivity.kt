@@ -1,13 +1,13 @@
 package com.example.bigohpinbox
 
 import android.annotation.SuppressLint
-import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.widget.addTextChangedListener
 import androidx.databinding.DataBindingUtil
 import com.example.bigohpinbox.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var activityMainBinding: ActivityMainBinding
@@ -21,13 +21,15 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("ResourceType")
     private fun pinView() {
         //hidden password
-        activityMainBinding.rectanglePinView.setPasswordHidden(true)
+        activityMainBinding.circlePinView.setPasswordHidden(true)
         //To change Color of the item entering wrong or right otp
-        activityMainBinding.rectanglePinView.addTextChangedListener {
-            if(it?.length == activityMainBinding.rectanglePinView.itemCount){
-                activityMainBinding.rectanglePinView.setLineColor(
+     activityMainBinding.circlePinView.addTextChangedListener {
+            if(it?.length == activityMainBinding.circlePinView.itemCount){
+                activityMainBinding.circlePinView.setLineColor(
                     ResourcesCompat.getColor(resources,R.color.teal_700, theme))
             }
         }
+        //To change color of the focus Text box
+
     }
 }

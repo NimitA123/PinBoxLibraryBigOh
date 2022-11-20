@@ -28,7 +28,7 @@
             app:itemCount="4"
             app:itemHeight="48dp"
             app:itemRadius="4dp"
-            app:lineColor="@color/black"
+            app:lineColor="@color/selected_boxcolorchange"
             app:itemSpacing="10dp"
             app:itemWidth="48dp"
             app:layout_constraintBottom_toBottomOf="parent"

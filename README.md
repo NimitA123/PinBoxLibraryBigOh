@@ -4,11 +4,7 @@
 <img src="https://user-images.githubusercontent.com/86598310/202857712-3b15e43e-2e11-4027-b07b-b8a54b41da78.jpeg" width="200" height="400" />
 </p>	
 
-https://user-images.githubusercontent.com/86598310/202858523-22beae59-dcda-4044-b0c8-76e43831485e.mp4
-
-
-
-
+https://user-images.githubusercontent.com/86598310/202902657-95ed2b37-d35b-438c-a20b-b8d493a9617e.mp4
 
 ## Add it in your root build.gradle at the end of repositories:
 ### allprojects {
@@ -19,7 +15,7 @@ https://user-images.githubusercontent.com/86598310/202858523-22beae59-dcda-4044-
 	}
   ##  Add the dependency
   ###	dependencies {
-	        implementation 'com.github.NimitA123:PinBoxLibraryBigOh:1.0.3'
+	        implementation 'com.github.NimitA123:PinBoxLibraryBigOh:1.0.7'
 	}
 	
 	

@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/86598310/202858523-22beae59-dcda-4044-
 	}
   ##  Add the dependency
   ###	dependencies {
-	        implementation 'com.github.NimitA123:PinBoxLibraryBigOh:1.0.3'
+	        implementation 'com.github.NimitA123:PinBoxLibraryBigOh:1.0.7'
 	}
 	
 	

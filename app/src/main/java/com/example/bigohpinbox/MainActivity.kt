@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding.rectanglePinView.addTextChangedListener {
             if(it?.length == activityMainBinding.rectanglePinView.itemCount){
                 activityMainBinding.rectanglePinView.setLineColor(
-                    ResourcesCompat.getColor(resources, Color.BLUE, theme))
+                    ResourcesCompat.getColor(resources,R.color.teal_700, theme))
             }
         }
     }
